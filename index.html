@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE - Challenge 1</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="encriptar.js"></script>
+
+</head>
+
+<body>
+
+    <main>
+
+        <section class="principal">
+            <div class="logo">
+                <img class="imagen-logo" src="Logo.png" alt="logo-alura">
+                <h1 class="titulo-logo">Encriptador de Mensajes</h1>
+            </div>
+            <div class="texto-area">
+                <textarea class="texto-input" id="inputTexto" type="text" autofocus
+                    placeholder="Introduce el texto aqui.." style="background-color: #e3eefc;"></textarea>
+            </div>
+            <div class="rectangulo">
+                <img src="Munieco.png" id="munieco" alt="munieco-mensaje">
+                <h1 id="mensaje">Ningun mensaje fue encontrado</h1>
+                <textarea id="texto-output" rows="8" cols="50"
+                    placeholder="Ingrese el texto para encriptar o desencriptar"
+                    style="background-color: white;"></textarea>
+                <button id="copiar" type="button" name="button" onclick="copiar()">Copiar</button>
+            </div>
+            <section class="botones">
+                <div id="notificacion">
+                    <img class="imagen-notificacion" src="peligro.png" alt="alerta-imagen">
+                    <p>Solo letras minusculas y sin acentos.</p>
+                </div>
+                <button type="button" id="boton-encriptar" onclick="encriptar()">Encriptar!</button>
+                <button type="button" id="boton-desencriptar" onclick="desencriptar()">Desencriptar!</button>
+                <!--<button type="button" id="boton-limpiar" onclick="limpiar()">Limpiar!</button>!-->
+            </section>
+
+
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
